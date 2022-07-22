@@ -8,7 +8,7 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
-//test2
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
