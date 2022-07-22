@@ -51,6 +51,7 @@ public class BoardService {
         Board board = new Board();
         board.setTitle(boardDto.getTitle());
         board.setContent(boardDto.getContent());
+        board.setFile(boardDto.getFile());
         board.setUser(user);
         boardRepository.save(board);
         return BoardDto.toDto(board);
@@ -65,6 +66,7 @@ public class BoardService {
 
         board.setTitle(boardDto.getTitle());
         board.setContent(boardDto.getContent());
+        board.setFile(boardDto.getFile());
 
         return BoardDto.toDto(board);
     }

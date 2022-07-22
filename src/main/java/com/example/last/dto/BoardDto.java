@@ -12,6 +12,7 @@ public class BoardDto {
     private int id;
     private String title;
     private String content;
+    private String file;
     private String writer;
 
     public static BoardDto toDto(Board board) {
@@ -19,6 +20,7 @@ public class BoardDto {
                 board.getId(),
                 board.getTitle(),
                 board.getContent(),
+                board.getFile(),
                 board.getUser().getNickname());
     }
 

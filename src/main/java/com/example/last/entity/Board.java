@@ -24,6 +24,9 @@ public class Board {
     @Column(nullable = false)
     private String content;
 
+    @Column(nullable = false)
+    private String file;
+
     @OnDelete(action = OnDeleteAction.CASCADE)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
